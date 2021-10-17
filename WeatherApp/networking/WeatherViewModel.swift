@@ -22,7 +22,7 @@ class WeatherViewModle : ObservableObject {
     }
     
     func fetchWeather() {
-        guard let url = URL(string: "https://api.openweathermap.org/data/2.5/onecall?lat=47.346606&lon=8.337156&units=metric&exclude=hourly,daily&appid=APIKEY") else {
+        guard let url = URL(string: "https://api.openweathermap.org/data/2.5/onecall?lat=47.346606&lon=8.337156&units=metric&exclude=hourly,daily&appid=63682862f38453b84e4a971c0064606e") else {
             return
         }
         let task = URLSession.shared.dataTask(with: url){ data, _, error in
